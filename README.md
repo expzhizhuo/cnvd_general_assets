@@ -23,7 +23,7 @@ pip3 install -r requirements.txt
 启动命令
 
 ``` 
-python3 bat -f 文件名.xls
+python3 bat.py -f 文件名.xls
 ```
 
 fofa会员配置
