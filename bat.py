@@ -92,9 +92,9 @@ def fofa_search(self):
     res.encoding = res.apparent_encoding
     resp = res.json()
     print(resp)
-    output('FOFA语句：{} 公网资产独立ip有{}个'.format(self, resp['distinct']['ip']))
     try:
         if resp['error'] == False:
+            output('FOFA语句：{} 公网资产独立ip有{}个'.format(self, resp['distinct']['ip']))
             if int(resp['distinct']['ip']) > 0:
                 for i in range(len(resp['aggs']['title'])):
                     count = resp['aggs']['title'][i]['count']
@@ -134,6 +134,7 @@ def fofa_search(self):
                 pass
         else:
             output(f"ERROR：{resp}")
+            pass
     except Exception as e:
         output(f"ERROR：{e}")
         pass
