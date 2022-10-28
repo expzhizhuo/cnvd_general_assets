@@ -16,8 +16,8 @@ warnings.filterwarnings('ignore')
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = '1'
 
 config = {
-    'email': 'zzw@jia-jiu.com',  # fofa的登录邮箱
-    'key': '3dc4861675be08d0afcda5bcd352301e',  # fofa个人中心的key
+    'email': '',  # fofa的登录邮箱
+    'key': '',  # fofa个人中心的key
     'size': '10',  # 公网资产的数量默认是10，可以根据自己的习惯进行调整，
     'base_url': 'https://fofa.info/api/v1/search/stats',  # fofa api接口地址
     'user_url': 'https://fofa.info/api/v1/info/my',  # fofa 账户信息接口
