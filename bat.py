@@ -87,7 +87,8 @@ def fofa_search(self):
         'qbase64': base_fofa_search,
         # 'size': config['size'],
     }
-    time.sleep(random.randint(5, 10))
+    output("等待FOFA查询结果，程序会随机休眠10-30S")
+    time.sleep(random.randint(10, 30))
     res = requests.get(str(config['base_url']), data, timeout=60)
     res.encoding = res.apparent_encoding
     resp = res.json()
